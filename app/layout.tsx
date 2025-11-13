@@ -1,8 +1,11 @@
 // /app/layout.tsx
 import type { Metadata } from 'next';
 import './globals.css';
-import Navbar from './navbar';
 import { NavbarProvider } from '@/context/NavbarContext';
+
+import Navbar from './navbar';
+import Footer from './footer';
+
 
 export const metadata: Metadata = {
     title: {
@@ -34,6 +37,7 @@ export default function RootLayout({
                 <NavbarProvider>
                     <Navbar />
                     {children}
+                    <Footer />
                 </NavbarProvider>
             </body>
         </html>

@@ -6,9 +6,8 @@ import { FaArrowUp } from 'react-icons/fa6';
 import Hero from '@/index/Hero';
 import AboutSection from '@/index/AboutSection';
 import ProjectsSection from '@/index/ProjectsSection';
-// import TechStackSection from '@/index/TechStackSection';
-// import ActivitySection from '@/index/ActivitySection';
-// import GallerySection from '@/index/GallerySection';
+import HistorySection from '@/index/HistorySection';
+import TechStackSection from '@/index/TechStackSection';
 
 export default function Home() {
     const [showScrollTop, setShowScrollTop] = useState(false);
@@ -26,9 +25,8 @@ export default function Home() {
             <Hero />
             <AboutSection />
             <ProjectsSection />
-            {/* <TechStackSection />
-            <ActivitySection />
-            <GallerySection /> */}
+            <HistorySection />
+            <TechStackSection />
 
             <motion.button
                 initial={{ opacity: 0, scale: 0.8 }}

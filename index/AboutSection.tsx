@@ -117,7 +117,7 @@ export default function AboutSection() {
                 }}
                 className="text-2xl sm:text-4xl font-bold mt-16 mb-8 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent text-center"
             >
-                趣味
+                Hobbies
             </motion.h3>
 
             <div className="max-w-4xl text-gray-300 text-lg leading-relaxed px-4 space-y-10 text-left">

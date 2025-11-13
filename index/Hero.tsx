@@ -26,9 +26,9 @@ export default function Hero() {
                 setTimeout(() => {
                     setStartBlink(true);
                     setTypingDone(true); // ← ここで通知
-                }, 800);
+                }, 950);
             }
-        }, 195);
+        }, 210);
 
         return () => clearInterval(interval);
     }, [setTypingDone]);
@@ -60,7 +60,7 @@ export default function Hero() {
             <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 3, duration: 1 }}
+                transition={{ delay: 4.3, duration: 1.5 }}
                 className="text-gray-300 text-base sm:text-xl max-w-2xl mx-auto"
             >
                 ECS e-Sports - Team Manager & Developer <br />
@@ -70,7 +70,7 @@ export default function Hero() {
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 4, duration: 1 }}
+                transition={{ delay: 4.3, duration: 1.7 }}
                 className="mt-10 flex flex-wrap gap-3 justify-center"
             >
                 <Link
