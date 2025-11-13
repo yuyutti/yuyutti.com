@@ -1,8 +1,11 @@
 // /app/layout.tsx
 import type { Metadata } from 'next';
 import './globals.css';
+
+import GoogleAnalytics from '@/components/GoogleAnalytics'
+import { WebVitals } from '@/components/WebVitals'
+
 import { NavbarProvider } from '@/context/NavbarContext';
-import Script from 'next/script'
 
 import Navbar from './navbar';
 import Footer from './footer';
@@ -34,26 +37,14 @@ export default function RootLayout({
 }) {
     return (
         <html lang="ja">
-            <head>
-                {/* Google Analytics */}
-                <Script
-                    async
-                    src="https://www.googletagmanager.com/gtag/js?id=G-K1ZDWBYEJ1"
-                />
-                <Script id="google-analytics">
-                    {`
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-                        gtag('config', 'G-K1ZDWBYEJ1');
-                    `}
-                </Script>
-            </head>
+
             <body>
                 <NavbarProvider>
                     <Navbar />
                     {children}
                     <Footer />
+                    <GoogleAnalytics />
+                    <WebVitals />
                 </NavbarProvider>
             </body>
         </html>
