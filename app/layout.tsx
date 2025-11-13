@@ -4,6 +4,7 @@ import './globals.css';
 
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 import { WebVitals } from '@/components/WebVitals'
+import ScrollToTop from '@/components/ScrollToTop'
 
 import { NavbarProvider } from '@/context/NavbarContext';
 
@@ -45,6 +46,7 @@ export default function RootLayout({
                     <Footer />
                     <GoogleAnalytics />
                     <WebVitals />
+                    <ScrollToTop />
                 </NavbarProvider>
             </body>
         </html>

@@ -17,9 +17,10 @@ export default function Navbar() {
     const lastScrollY = useRef(0);
 
     useEffect(() => {
-        if (!typingDone) return;
-
-        setInitialized(true);
+        if (typingDone) {
+            setInitialized(true)
+            setShowNavbar(true)
+        }
 
         const handleScroll = () => {
             const currentY = window.scrollY;
