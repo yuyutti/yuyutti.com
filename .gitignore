@@ -43,4 +43,5 @@ next-env.d.ts
 # history
 /.history
 
-./public/
+public/sitemap*.xml
+public/robots.txt
