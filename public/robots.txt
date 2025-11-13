@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://yuyutti.com
+
+# Sitemaps
+Sitemap: https://yuyutti.com/sitemap.xml
