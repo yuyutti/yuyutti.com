@@ -1,7 +1,7 @@
 // next-sitemap.config.js
 
 const noIndexPages = [
-
+    '/privacy',
 ];
 
 export default {
